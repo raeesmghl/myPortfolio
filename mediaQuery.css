@@ -1,0 +1,174 @@
+@media (max-width: 1264px) {
+    .about {
+        padding: 60px 30px;
+        /* from 60px 40px  to 60px 30px*/
+
+    }
+
+    .works {
+        flex-direction: column;
+    }
+
+    .works .left,
+    .works .right .item,
+    footer {
+        padding: 40px 30px;
+    }
+}
+
+
+
+@media screen and (max-width: 992px) {
+    nav .links {
+        padding: 0 40px;
+    }
+
+    footer>a {
+        font-size: 20px;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+
+    nav .links a {
+        font-size: 16px;
+    }
+
+    .about {
+        flex-direction: column-reverse;
+        gap: 30px;
+        padding: 30px;
+    }
+
+    .about .left .info,
+    .about .right img {
+        margin-top: 30px;
+    }
+
+    .about .left>h3 {
+        /* font-size: 24px;
+        font-weight: 400; */
+        text-align: center;
+    }
+
+    .about .left .info {
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .about .left .info p {
+        padding-right: 0;
+        /* padding right was added when flex direction is row */
+    }
+
+    .about .right img {
+        height: 250px;
+        width: 250px;
+    }
+
+    footer a.online {
+        display: none;
+    }
+
+
+}
+
+
+@media screen and (max-width: 576px) {
+    .about .left .info h2 {
+        font-size: 30px;
+    }
+
+    .about .left .info p,
+    .works .left .work-list .item .work-info p,
+    .works .left .work-list .item p {
+        font-size: 16px;
+
+    }
+
+    .about .left .info .buttons button {
+        font-size: 14px;
+    }
+
+    .works .left .work-list .item .work-info h5,
+    .works .right .item a {
+        font-size: 20px;
+    }
+
+
+
+    /* .works .right .item:first-child{
+        background-color: red;
+        padding: 10px;
+    } */
+
+
+    
+    .works .right .item , footer{
+        padding: 20px;
+    }
+
+    .works .right .item:not(:first-child) a,
+    .works .right .item:not(:first-child) p{
+        font-size: 14px;
+    }
+
+
+    footer .my-portfolio-text{
+        font-size: 16px !important;
+        background-color: red;
+    }
+}
+
+@media screen and (max-width: 470px) {
+
+    nav .links {
+        display: none;
+    }
+
+    nav {
+        display: flex;
+        justify-content: center;
+    }
+
+    nav .logo {
+        flex: 1;
+    }
+
+
+    .works .left .work-list .item {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .works .left .work-list .item .work-info{
+        text-align: center;
+    }
+
+
+    .works .left .work-list .item .work-info p {
+        font-size: 14px;
+        margin-top: 0px;
+
+        /* background-color: red; */
+    }
+    .works .left .work-list .item>p{
+        margin-top: 12px;
+    }
+
+
+
+
+
+    footer .socials{
+        gap: 20px;
+    }
+    
+
+    footer .socials > a{
+        font-size: 20px;
+
+    }
+}
